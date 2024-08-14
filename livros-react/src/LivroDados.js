@@ -65,7 +65,7 @@ const LivroDados = () => {
                 </div>
             
                 <div className="autores mb-3">
-                    <label for="autores" htmlFor="editora" className="form-label">Autores (1 por linha)</label>
+                    <label htmlFor="autores" className="form-label">Autores (1 por linha)</label>
                     <textarea className="form-control mb-3" id="autores" value={autores} onChange={(e) => setAutores(e.target.value)} required></textarea>
                 </div>
 

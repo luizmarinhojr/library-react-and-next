@@ -1,6 +1,6 @@
 import Livro from "../modelo/Livro";
 
-const livros: Array<Livro> = [
+var livros: Array<Livro> = [
     {
         codigo: 1,
         codEditora: 3,
@@ -36,7 +36,9 @@ class ControleLivros {
     }
 
     public excluir(codigo: number) {
-        livros.splice(livros.findIndex(livro => livro.codigo === codigo), 1);
+        console.log(livros);
+        livros = livros.filter(livro => livro.codigo !== codigo);
+        console.log(livros);
     }
 }
 
